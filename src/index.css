@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: bisque;
+}
+
+.myImg {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1000px;
+  height: 500px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgb(238, 237, 235, 0.2);
+}
+
+@media (max-width: 370px) {
+  .container {
+    height: 350px;
+  }
+  .myImg {
+    height: 100vh;
+  }
+  .app .inputClass {
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .app .buttonClass {
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .app .seperator {
+    text-align: start !important;
+    padding: 10px 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .app .search {
+    display: block !important;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+.bottom .val {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.bottom .text {
+  font-size: 1.2rem;
+  font-weight: 3%;
+}
+
+.app .search {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+
+.app button {
+  text-align: right;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.app button:hover {
+  color: aquamarine;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.app .seperator {
+  text-align: right;
+}
